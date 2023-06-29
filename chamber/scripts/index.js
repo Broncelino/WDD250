@@ -10,3 +10,12 @@ function getDate() {
     }).format(now);
     datefield.innerHTML = fulldate
 }
+
+function getYear() {
+    const now = new Date().getFullYear();
+    document.getElementById("year").innerHTML += now
+}
+
+function modify() {
+    document.getElementById("mod").innerHTML += document.lastModified;
+}

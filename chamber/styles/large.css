@@ -4,9 +4,9 @@ header {
     grid-template-columns: 1fr 2fr 4fr 1fr;
     grid-template-rows: 2fr 1fr;
     /* max-height: 150px; */
-    background-color: #a32431;
+    background-color: #ff2e43;
 }
-header nav {
+header ul {
     /* width: 300px;
     height: 55px; */
     display: flex;
@@ -14,14 +14,19 @@ header nav {
     flex-direction: row;
   }
   
-header nav a {
+header ul li {
+    display: inline;
     flex: 1 1 auto;
     text-decoration: none;
     font-size: 32px;
     color: white;
     margin: auto;
   }
-  header nav a:hover {
+  header ul li a {
+    text-decoration: none;
+    margin: auto;
+  }
+  header ul li:hover {
     background-color: white;
     color: black
   }
@@ -46,7 +51,7 @@ header nav a {
     font-size: 24px;
   }
   footer {
-    background-color: #a32431;
+    background-color: #ff2e43;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;
     grid-template-rows: 4fr 1fr;
@@ -55,11 +60,28 @@ header nav a {
   footer img {
     margin: 5px;
     max-width: 150px;
+    margin-left: 20px;
   }
   #foottitle {
     font-size: 24px;
+    grid-column: 2/4;
   }
   #foottitle p {
     margin: 10px;
     font-family: 'Roboto', serif;
+  }
+  #info {
+    grid-column: 4/5;
+    font-size: 20px;
+    text-align: center;
+  }
+  #subfooter {
+    grid-column: 1/5;
+    border-top: 1px solid;
+    margin: auto;
+  }
+  #subfooter li {
+    display: inline;
+    font-size: 17px;
+    text-align: center;
   }
