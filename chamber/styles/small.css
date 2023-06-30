@@ -49,4 +49,7 @@
     #hero-image {
         grid-column: 1/2;
     }
+    .box img:hover {
+        border: none;
+      }
 }

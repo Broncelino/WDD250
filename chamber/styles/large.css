@@ -126,6 +126,7 @@ header nav ul li {
 .box {
   background-color: #537d8d;
   text-align: center;
+
   /* border: black 1px solid; */
 }
 .box h2{
@@ -133,6 +134,13 @@ header nav ul li {
 }
 .box h3 {
   text-shadow: white 1px 1px;
+}
+.box img {
+  max-width: 95%;
+  margin-top: 10px;
+}
+.box img:hover {
+  border: #ff2e43 2px solid;
 }
 #news {
   grid-column: 2/4;
