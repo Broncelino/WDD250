@@ -26,7 +26,15 @@ function toggleMenu() {
     
 }
 let x;
-x = document.getElementById("button")
+x = document.getElementById("hambutton")
 x.addEventListener("click", () => {
     toggleMenu()
 })
+
+function banner() {
+    const day = new Date().getDay();
+    if (day == 1 || day == 2) {
+        document.getElementById('banner').classList.toggle('open');
+    }
+}
+banner()

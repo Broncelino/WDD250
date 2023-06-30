@@ -25,4 +25,28 @@
         font-size: 6px;
         margin: auto;
     }
+    main {
+        grid-template-columns: 1fr;
+        /* grid-auto-flow: column; */
+    }
+    #event {
+        grid-row: 2/3;
+    }
+    #weather {
+        grid-row: 3/4;
+    }
+    #news {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    #b1 {
+        grid-row: 5/6;
+    }
+    #b2 {
+        grid-row: 6/7;
+        grid-column: 1/2;
+    }
+    #hero-image {
+        grid-column: 1/2;
+    }
 }
