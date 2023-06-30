@@ -137,9 +137,9 @@ header nav ul li {
 #news {
   grid-column: 2/4;
 }
-#join {
-  /* background-color: green; */
-}
+/* #join {
+ background-color: green; 
+} */
 #banner p{
   margin: 0px;
   text-align: center;
@@ -150,4 +150,11 @@ header nav ul li {
 }
 #banner.open{
   display: block;
+}
+#temp {
+  display: flex;
+  justify-content: center;
+}
+#temp p {
+  font-size: 30px;
 }
