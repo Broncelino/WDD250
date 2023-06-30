@@ -8,7 +8,8 @@
           href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <script type="text/javascript" src="scripts/index.js"></script>
+    <link rel="stylesheet" href="styles/small.css">
+    
 </head>
 <body>
     <header>
@@ -17,20 +18,23 @@
             <p>Owasso</p>
             <p> Chamber of Comerce</p>
         </div>
-        <ul>
-            <li><a href="">Discover</a></li>
-            <li><a href="">Directory</a></li>
-            <li><a href="">Join</a></li>
-            <li><a href="">Connect</a></li>
-        </ul>
+        <nav>
+            
+            <ul id="primarynav">
+                <li><a href="">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">Connect</a></li>
+            </ul>
+        </nav>
         <div id="socials">
             <img src="images/facebook.png" alt="facebook logo and link" href="">
             <img src="images/instagram.png" alt="instagram logo and link" href="">
         </div>
         <p id="date">
-            <script>getDate()</script>
+            
         </p>
-
+        <button id="button">&#9776;</button>
     </header>
     <div>middle stuff</div>
     <footer>
@@ -46,12 +50,13 @@
             <p>location map</p>
         </div>
         <ul id="subfooter">
-            <li id="year">©<script>getYear()</script></li>
+            <li id="year">©</li>
             <li>Owasso Chamber |</li>
             <li>Bryson Williams |</li>
             <li>WDD 250 Project |</li>
-            <li id="mod">Last Modification: <script>modify()</script></li>
+            <li id="mod">Last Modification: </li>
         </ul>
     </footer>
+    <script type="text/javascript" src="scripts/index.js"></script>
 </body>
 </html>

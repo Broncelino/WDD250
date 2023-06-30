@@ -2,43 +2,55 @@
 header {
     display: grid;
     grid-template-columns: 1fr 2fr 4fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    /* grid-template-rows: 2fr 1fr; */
     /* max-height: 150px; */
     background-color: #ff2e43;
 }
-header ul {
+header nav ul {
     /* width: 300px;
     height: 55px; */
     display: flex;
     text-align: center;
     flex-direction: row;
+    justify-content: center;
+    padding: 0px;
   }
   
-header ul li {
-    display: inline;
+header nav ul li {
+    /* display: inline-block; */
     flex: 1 1 auto;
+    list-style-type: none;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 24px;
     color: white;
     margin: auto;
   }
-  header ul li a {
+  header nav ul li a {
     text-decoration: none;
+    color: black;
     margin: auto;
+    display: block;
   }
-  header ul li:hover {
+  header nav ul li:hover {
     background-color: white;
     color: black
   }
   header img{
     max-width: 100px;
   }
+  button{
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    display: none;
+  }
   #title p {
     margin: 10px;
     font-family: 'Roboto', serif;
   }
   #socials img{
-    max-width: 45px;
+    max-width: 25px;
     justify-self: center;
   }
   #date {
@@ -54,7 +66,7 @@ header ul li {
     background-color: #ff2e43;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;
-    grid-template-rows: 4fr 1fr;
+
 
   }
   footer img {

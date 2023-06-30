@@ -1,0 +1,28 @@
+@media (max-width: 25.5em) {
+    #title p {
+        font-size: 12px;
+    }
+    #date {
+        font-size: 12px;
+        margin: 3px;
+    }
+    header nav ul li {
+        font-size: 12px;
+    }
+    #foottitle p{
+        font-size: 9px;
+        margin: auto;
+    }
+    #info p {
+        font-size: 7px;
+        margin: auto;
+    }
+    footer img {
+        max-width: 50px;
+    }
+    
+    #subfooter li {
+        font-size: 6px;
+        margin: auto;
+    }
+}
