@@ -166,3 +166,25 @@ header nav ul li {
 #temp p {
   font-size: 30px;
 }
+#answers{
+  display: flex;
+  flex-direction: column;
+  background-color: #537d8d;
+  padding: 5%;
+}
+#desc {
+  min-height: 4em;
+}
+#answers input {
+  max-width: 200px;
+  border-radius: 8px;
+}
+#answers select {
+  max-width: 150px;
+}
+#thanks {
+  background-color: #537d8d;
+}
+#thanks h1 {
+  margin: auto;
+}

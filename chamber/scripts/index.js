@@ -2,12 +2,7 @@
 function getDate() {
     const datefield = document.getElementById("date");
     const now = new Date();
-    const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-        now
-    );
-    const fulldateUK = new Intl.DateTimeFormat("en-UK", {
-        dateStyle: "full"
-    }).format(now);
+    const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
     datefield.innerHTML = fulldate
 }
 getDate()
@@ -38,3 +33,13 @@ function banner() {
     }
 }
 banner()
+
+function formtime() {
+    let x = document.getElementById('formtime')
+    if (x != 'undefined' && x != null) {
+        time = new Date()
+        console.log(time)
+        x.innerHTML = time
+    }
+}
+formtime()
