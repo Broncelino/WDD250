@@ -44,7 +44,7 @@
             <div class="hero-text">
               <h1>Welcome to Owasso</h1>
               <p></p>
-              <button id="join">Join Chamber</button>
+              <button id="join" onclick="window.location = 'join.html'">Join Chamber</button>
             </div>
           </div>
 
@@ -65,10 +65,10 @@
           <div class="box" id="weather">
             <h2>Weather</h2>
             <div id="temp">
-                <img src="images/partlycloudy.webp" alt="Sun with a cloud in front of it">
+                <img id="icon" src="images/partlycloudy.webp" alt="Sun with a cloud in front of it">
                 <p><span id="tempnum">40</span>°F</p>
             </div>
-            <h3>cloudy</h3>
+            <h3 id="desc">cloudy</h3>
             <h4>Wind speed: <span id="speed">6</span>mph</h4>
             <h4>Wind Chill: <span id="chill">N/A</span>°F</h4>
 
@@ -84,7 +84,7 @@
           </div>
 
           <div class="box" id="joinbox">
-            <button>Join the Chamber</button>
+            <button onclick="window.location = 'join.html'">Join the Chamber</button>
             <h4>click the button to start the process of joining the Owasso Chamber of Commerce</h4>
           </div>
 

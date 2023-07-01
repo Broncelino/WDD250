@@ -46,22 +46,6 @@ formtime()
 let gridbut = document.getElementById('grid')
 let listbut = document.getElementById('list')
 if (gridbut != 'undefined' && gridbut != null){
-    // gridbut.addEventListener("click", () => {
-    //     let group = document.querySelector("main").getElementsByTagName("div")
-    //     group = Array.from(group);
-    //     group.forEach(element => {
-    //         element.classList.add("box");
-    //         element.classList.remove("list");
-    //     })
-    // })
-    // listbut.addEventListener("click", () => {
-    //     let group = document.querySelector("main").getElementsByTagName("div")
-    //     group = Array.from(group);
-    //     group.forEach(element => {
-    //         element.classList.add("list");
-    //         element.classList.remove("box")
-    //     });
-    // })
     gridbut.addEventListener("click", () => {
         let element = document.querySelector("main")
             element.classList.add("grid");
@@ -73,4 +57,18 @@ if (gridbut != 'undefined' && gridbut != null){
                 element.classList.remove("grid");
                 })
         
+}
+
+let weat = document.getElementById("weather")
+if (weat != 'undefined' && weat != null){
+    let y = "https://api.openweathermap.org/data/2.5/weather?lat={36.269539}&lon={-95.854713}&appid={4c6f63225122693219492986505e64b4}"
+    tem = y.main.temp * (9/5) -459.67
+    speed = y.wind.speed
+    desc = y.weather.description
+    icon = y.weather.icon
+    document.getElementById('tempnum').innerHTML = ~~temp
+    document.getElementById('speed').innerHTML = ~~speed
+    document.getElementById('desc').innerHTML = desc
+    document.getElementById('icon').src = `https://openweathermap.org/img/wn/${icon}@2x.png`
+    // console.log(y)
 }
