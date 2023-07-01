@@ -46,13 +46,31 @@ formtime()
 let gridbut = document.getElementById('grid')
 let listbut = document.getElementById('list')
 if (gridbut != 'undefined' && gridbut != null){
-    console.log("TEst")
+    // gridbut.addEventListener("click", () => {
+    //     let group = document.querySelector("main").getElementsByTagName("div")
+    //     group = Array.from(group);
+    //     group.forEach(element => {
+    //         element.classList.add("box");
+    //         element.classList.remove("list");
+    //     })
+    // })
+    // listbut.addEventListener("click", () => {
+    //     let group = document.querySelector("main").getElementsByTagName("div")
+    //     group = Array.from(group);
+    //     group.forEach(element => {
+    //         element.classList.add("list");
+    //         element.classList.remove("box")
+    //     });
+    // })
     gridbut.addEventListener("click", () => {
-        document.querySelector("main").getElementsByTagName("div").classList.toggle("box");
-        document.querySelector("main").getElementsByTagName("div").classList.toggle("list");
-    })
-    listbut.addEventListener("click", () => {
-        document.querySelector("main").getElementsByTagName("div").classList.toggle("list");
-        document.querySelector("main").getElementsByTagName("div").classList.toggle("box");
-    })
+        let element = document.querySelector("main")
+            element.classList.add("grid");
+            element.classList.remove("list");
+            })
+        listbut.addEventListener("click", () => {
+            let element = document.querySelector("main")
+                element.classList.add("list");
+                element.classList.remove("grid");
+                })
+        
 }

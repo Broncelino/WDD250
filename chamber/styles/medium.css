@@ -56,7 +56,7 @@
     #info {
         font-size: 12px;
     }
-    main {
+    .grid {
         grid-template-columns: 1fr 1fr;
     }
     .hero-image {
