@@ -43,3 +43,16 @@ function formtime() {
     }
 }
 formtime()
+let gridbut = document.getElementById('grid')
+let listbut = document.getElementById('list')
+if (gridbut != 'undefined' && gridbut != null){
+    console.log("TEst")
+    gridbut.addEventListener("click", () => {
+        document.querySelector("main").getElementsByTagName("div").classList.toggle("box");
+        document.querySelector("main").getElementsByTagName("div").classList.toggle("list");
+    })
+    listbut.addEventListener("click", () => {
+        document.querySelector("main").getElementsByTagName("div").classList.toggle("list");
+        document.querySelector("main").getElementsByTagName("div").classList.toggle("box");
+    })
+}
